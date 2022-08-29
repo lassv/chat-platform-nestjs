@@ -15,7 +15,7 @@ async function bootstrap() {
   const adapter = new WebsocketAdapter(app);
   app.useWebSocketAdapter(adapter);
   app.setGlobalPrefix('api');
-  app.enableCors({ origin: ['http://localhost:3000', "chatappanson.netlify.app"], credentials: true });
+  app.enableCors({ origin: ['http://localhost:3000', "https://chatappdk.netlify.app"], credentials: true });
   app.useGlobalPipes(new ValidationPipe());
   app.use(
     session({
